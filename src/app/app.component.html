@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="col-lg-12">
+    <header>
+      <h2 [ngStyle]="{'color':getColor()}" [ngClass]="{'centerClass': true}">My First App</h2>
+    </header>
+  </div>
+  <h4>Hi {{name}} !!!!</h4>
+
+  <input type="text" [(ngModel)]="name" placeholder="Name" />
+  <br />
+  <br />
+
+  <input type="number" [(ngModel)]="age" placeholder="Age" />
+  <br />
+  <br />
+
+  <button class="btn btn-success" (click)="onSave()">Save</button>
+  <hr />
+
+  <p>Details:</p>
+  Name: <h4>{{name}}</h4>
+  <br />
+  Age:<h4>{{age}}</h4>
+  <hr />
+
+  <app-paragraph-comp></app-paragraph-comp>
+</div>
